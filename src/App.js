@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useState } from "react";
-import {Button} from "@mui/material"
 
 const App = () => {
   const title = "The robot is on the way to pickup your order";
@@ -30,7 +29,7 @@ const App = () => {
           />
         </div>
         <div className="title-text-container">
-          <img alt="title-text" src="./assets/title-logo.png" />
+          <img alt="title-text-img" src="./assets/title-logo.png" className="title-text-img"/>
           <p className="title-text">{titleText}</p>
         </div>
         <div className="order-container">
@@ -47,22 +46,21 @@ const App = () => {
         <div className="scan-qr-container">
           <h2 className="scan-text">Get your item with the below options</h2>
           <div className="scan-buttons">
-            <Button className={`scan-btn ${time === 0} ? delivered-btn : ""`} style={{
-              color: "white",
-              "font-weight": "900",
-              "border-radius": "30px",
-              "backgroundColor":"#BFBFBF",
-              "fontSize": "1.1rem"
-            }} variant="contained" disabled>Scan QR Code</Button>
-            <h2>OR</h2>
-            <Button style={{
-              color: "white",
-              "font-weight": "900",
-              "border-radius": "30px",
-              "backgroundColor":"#BFBFBF",
-              "fontSize": "1.1rem"
-            }} className="scan-btn" variant="contained" disabled>Enter PIN</Button>
-          </div>
+          <button  className={time===0?"delivery-btn":"scan-btn"} style={{
+            color: "white",
+            "font-weight": "900",
+            "border-radius": "30px",
+           
+            "fontSize": "1.1rem"
+          }} variant="contained" disabled>Scan QR Code</button>
+          <h2>OR</h2>
+          <button style={{
+            color: "white",
+            "font-weight": "900",
+            "border-radius": "30px",
+            "fontSize": "1.1rem"
+          }}  className={time===0?"delivery-btn":"scan-btn"} variant="contained" disabled>Enter PIN</button>
+        </div>
         </div>
         <div className="map-container">
           <h1 className="map-text">Map will be come here</h1>

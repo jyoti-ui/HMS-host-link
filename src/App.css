@@ -116,3 +116,31 @@ hr {
   border: none;
   border-radius: 5px;
 }
+
+@media screen and (max-width : 756px) {
+  .order-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+  }
+
+  .scan-buttons {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin: 3% 3%;
+  }
+
+  .scan-btn {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.12);
+    padding: 4%;
+  }
+
+  .delivery-btn {
+    width: 100%;
+    background-color: #01527c !important;
+  }
+}

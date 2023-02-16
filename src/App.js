@@ -20,17 +20,17 @@ const App = () => {
         <div className="title">
           <img
             className="title-image"
-            src="./assets/logo.png"
+            src="./assets/company-logo.png"
             alt="hms-logo-1"
           />
           <img
             className="title-image"
-            src="./assets/logo.png"
+            src="./assets/company-logo-2.png"
             alt="hms-log-2"
           />
         </div>
         <div className="title-text-container">
-          <img alt="title-text" src="./assets/logo.png" />
+          <img alt="title-text" src="./assets/title-logo.png" />
           <p className="title-text">{titleText}</p>
         </div>
         <div className="order-container">
